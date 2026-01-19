@@ -3,37 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - yash </title>
+    <title>Yash Khamkar - Resume</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            font-family: 'Open Sans', sans-serif; /* Clean body text */
+            background-color: #f4f4f9; /* Light grey background for contrast */
+            margin: 0;
+            padding: 40px 20px;
             line-height: 1.6;
-            color: #333;
+            color: #444;
         }
         .container {
             max-width: 800px;
             margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            border-top: 5px solid #2c3e50; /* Professional accent bar at top */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
         }
-        h1, h2, h3 {
-            margin-bottom: 10px;
-            color: #222;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 0 10px 0;
+            color: #2c3e50; /* Dark Slate Blue */
+            font-size: 36px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
-        .section {
-            margin-bottom: 25px;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e0e0e0; /* Section divider line */
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
         }
         .contact-info {
             font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .contact-info span {
+            margin-right: 15px;
+        }
+        p, li {
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .job-entry {
+            margin-bottom: 15px;
         }
         .job-title {
-            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #333;
+            float: left;
         }
         .job-duration {
             float: right;
-            font-style: italic;
+            font-size: 14px;
+            color: #888;
+            font-weight: 600;
         }
         .clear {
             clear: both;
+        }
+        strong {
+            color: #333;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .job-title, .job-duration {
+                float: none;
+                display: block;
+            }
+            .container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -41,53 +102,53 @@
 
 <div class="container">
 
-    <!-- Header / Name -->
-    <h1>Yash Khamkar </h1>
+    <h1>Yash Khamkar</h1>
     <div class="contact-info">
-        Email: yashkhmkar@gmail.com | Phone: +91 8369756008 | LinkedIn: linkedin.com/in/yourprofile
+        <span>yashkhmkar@gmail.com</span> | 
+        <span>+91 8369756008</span> | 
+        <span>linkedin.com/in/yourprofile</span>
     </div>
 
-    <!-- Summary -->
     <div class="section">
         <h2>Professional Summary</h2>
         <p>
-            Energetic electronics fresher with hands-on internship experience at Sky Electronic. Good problem-solving and teamwork skills, and a strong desire to learn and grow in the electronics field.
+            Energetic electronics fresher with hands-on internship experience at Sky Electronic. Possess strong problem-solving abilities and teamwork skills. Eager to leverage academic knowledge and practical experience to learn and grow in the electronics engineering field.
         </p>
     </div>
 
-    <!-- Experience (Internship) -->
     <div class="section">
         <h2>Work Experience</h2>
 
-        <div>
+        <div class="job-entry">
             <div class="job-title">Intern – Sky Electronic</div>
             <div class="job-duration">Jun 2024 – Aug 2024</div>
             <div class="clear"></div>
-            <ul>
-                <li>Assisted with electronic repair and testing tasks</li>
-                <li>Supported troubleshooting and maintenance activities</li>
-                <li>Gained practical experience with circuit testing and tools</li>
-                <li>Learned workplace practices and teamwork skills</li>
-            </ul>
         </div>
+        
+        <ul>
+            <li>Assisted senior technicians with electronic repair and testing tasks.</li>
+            <li>Supported troubleshooting and preventative maintenance activities on circuit boards.</li>
+            <li>Gained practical experience with circuit testing tools (Multimeter, Oscilloscope).</li>
+            <li>Collaborated with team members to ensure efficient workflow and workplace safety.</li>
+        </ul>
 
     </div>
 
-    <!-- Education -->
     <div class="section">
         <h2>Education</h2>
-        <p><strong> Electronics in EXTC </strong>, Tenra engineering  collage  — 2027</p>
+        <p>
+            <strong>B.E. in Electronics & Telecommunication (EXTC)</strong><br>
+            Terna Engineering College — Expected Graduation: 2027
+        </p>
     </div>
 
-    <!-- Skills -->
     <div class="section">
-        <h2>Skills</h2>
+        <h2>Technical Skills</h2>
         <ul>
-            <li>Basic electronics and circuit testing</li>
-            <li>Use of tools (multimeter, soldering iron)</li>
-            <li>Problem-solving and logical thinking</li>
-            <li>Teamwork & communication</li>
-            <li>Microsoft Office</li>
+            <li><strong>Electronics:</strong> Basic Circuit Design, PCB Testing, Soldering.</li>
+            <li><strong>Tools:</strong> Digital Multimeter, Soldering Iron, Oscilloscope.</li>
+            <li><strong>Soft Skills:</strong> Problem-solving, Logical Thinking, Teamwork & Communication.</li>
+            <li><strong>Software:</strong> Microsoft Office (Excel, Word, PowerPoint).</li>
         </ul>
     </div>
 
