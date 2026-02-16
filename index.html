@@ -1,202 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Khamkar - Resume</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #e9ecef;
-            margin: 0;
-            padding: 40px 0;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        
-        /* THEME: Dark Blue Header */
-        .header-banner {
-            background-color: #0d2c4d;
-            color: #ffffff;
-            padding: 40px;
-            text-align: center;
-        }
-
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            font-size: 38px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 700;
-        }
-        
-        .contact-info {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #aabdd1;
-            font-weight: 300;
-        }
-        .contact-info span {
-            margin: 0 10px;
-        }
-
-        /* Content Sections */
-        .content-body {
-            padding: 40px;
-        }
-
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0d2c4d;
-            font-size: 18px;
-            text-transform: uppercase;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-top: 25px;
-            margin-bottom: 20px;
-        }
-
-        p, li {
-            font-size: 15px;
-            line-height: 1.7;
-            color: #444;
-        }
-
-        ul {
-            margin-top: 0;
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-
-        .job-entry {
-            margin-bottom: 10px;
-        }
-        .job-title {
-            font-weight: 700;
-            font-size: 16px;
-            color: #222;
-            float: left;
-        }
-        .job-duration {
-            float: right;
-            font-size: 14px;
-            color: #666;
-            background-color: #f0f4f8;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-        .clear {
-            clear: both;
-        }
-        
-        /* Grid for Hobbies (Optional: makes them look neat) */
-        .hobby-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        @media (max-width: 600px) {
-            body { padding: 0; }
-            .container { box-shadow: none; }
-            .job-title, .job-duration {
-                float: none;
-                display: block;
-                margin-bottom: 5px;
-            }
-            .header-banner { padding: 30px 20px; }
-            .contact-info span { display: block; margin: 5px 0; }
-            .hobby-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    <title>Arithmetic Operations</title>
 </head>
 <body>
 
-<div class="container">
+    <h2>Arithmetic Operations using Switch Case</h2>
 
-    <div class="header-banner">
-        <h1>Yash Khamkar</h1>
-        <div class="contact-info">
-            <span>yashkhmkar@gmail.com</span> • 
-            <span>+91 8369756008</span> • 
-            <span>linkedin.com/in/yourprofile</span>
-        </div>
-    </div>
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br><br>
 
-    <div class="content-body">
-        
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>
-                Energetic electronics fresher with hands-on internship experience at Sky Electronic. Possess strong problem-solving abilities and teamwork skills. Eager to leverage academic knowledge and practical experience to learn and grow in the electronics engineering field.
-            </p>
-        </div>
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br><br>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <div class="job-entry">
-                <div class="job-title">Intern – Sky Electronic</div>
-                <div class="job-duration">Jun 2024 – Aug 2024</div>
-                <div class="clear"></div>
-            </div>
-            <ul>
-                <li>Assisted senior technicians with electronic repair and testing tasks.</li>
-                <li>Supported troubleshooting and preventative maintenance activities.</li>
-                <li>Gained practical experience with circuit testing tools (Multimeter, Oscilloscope).</li>
-                <li>Collaborated with team members to ensure efficient workflow.</li>
-            </ul>
-        </div>
+    <label>Select Operation:</label>
+    <select id="operator">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+    </select><br><br>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p>
-                <strong>B.E. in Electronics & Telecommunication (EXTC)</strong><br>
-                Terna Engineering College — Expected Graduation: 2027
-            </p>
-        </div>
+    <button onclick="calculate()">Calculate</button>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Electronics:</strong> Basic Circuit Design, PCB Testing, Soldering.</li>
-                <li><strong>Tools:</strong> Digital Multimeter, Soldering Iron, Oscilloscope.</li>
-                <li><strong>Soft Skills:</strong> Problem-solving, Logical Thinking, Teamwork.</li>
-                <li><strong>Software:</strong> Microsoft Office (Excel, Word, PowerPoint).</li>
-            </ul>
-        </div>
+    <h3 id="result"></h3>
 
-        <div class="section">
-            <h2>Interests & Hobbies</h2>
-            <div class="hobby-grid">
-                <ul>
-                    <li><strong>Sports (Cricket):</strong> Active team player; enjoy competitive sports which enhance physical endurance and team spirit.</li>
-                    <li><strong>Online Gaming:</strong> Strategic gaming requiring quick reaction times and resource management.</li>
-                </ul>
-                <ul>
-                    <li><strong>Photography:</strong> Passionate about capturing landscapes and details; keen eye for visual composition.</li>
-                    <li><strong>Cinema Documentation:</strong> Interest in film documentation and analyzing cinematic techniques.</li>
-                </ul>
-            </div>
-        </div>
+<script>
+function calculate() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var operator = document.getElementById("operator").value;
+    var result;
 
-    </div> 
+    switch(operator) {
+        case "+":
+            result = num1 + num2;
+            break;
 
-</div>
+        case "-":
+            result = num1 - num2;
+            break;
+
+        case "*":
+            result = num1 * num2;
+            break;
+
+        case "/":
+            if(num2 == 0) {
+                result = "Cannot divide by zero";
+            } else {
+                result = num1 / num2;
+            }
+            break;
+
+        default:
+            result = "Invalid Operation";
+    }
+
+    document.getElementById("result").innerHTML = "Result: " + result;
+}
+</script>
 
 </body>
 </html>
